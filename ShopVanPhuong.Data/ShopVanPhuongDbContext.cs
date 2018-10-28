@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopVanPhuong.Data
 {
-    class ShopVanPhuongDbContext: DbContext
+    public class ShopVanPhuongDbContext: DbContext
     {
         public ShopVanPhuongDbContext() : base("ShopVanPhuongConnection")
         {

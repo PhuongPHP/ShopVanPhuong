@@ -32,7 +32,7 @@ namespace ShopVanPhuong.Model.Models
         public virtual MenuGroup MenuGroup { set; get; }
 
         [MaxLength(10)]
-        public int Target { set; get; }
+        public string Target { set; get; }
 
         [Required]
         public bool Status { set; get; } // bit chuyển sang bool
