@@ -4,7 +4,7 @@ using ShopVanPhuong.Model.Models;
 
 namespace ShopVanPhuong.Data.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
 
     }
