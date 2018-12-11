@@ -1,0 +1,16 @@
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\ShopVanPhuong.Model.dll.config
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\ShopVanPhuong.Model.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\ShopVanPhuong.Model.pdb
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\EntityFramework.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\EntityFramework.xml
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\obj\Debug\ShopVanPhuong.Model.csprojAssemblyReference.cache
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\obj\Debug\ShopVanPhuong.Model.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\obj\Debug\ShopVanPhuong.Model.csproj.CopyComplete
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\obj\Debug\ShopVanPhuong.Model.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\obj\Debug\ShopVanPhuong.Model.pdb
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

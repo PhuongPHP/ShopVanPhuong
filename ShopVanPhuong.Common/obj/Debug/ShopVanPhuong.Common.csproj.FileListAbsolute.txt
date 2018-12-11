@@ -1,0 +1,6 @@
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Common\bin\Debug\ShopVanPhuong.Common.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Common\bin\Debug\ShopVanPhuong.Common.pdb
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Common\obj\Debug\ShopVanPhuong.Common.csprojAssemblyReference.cache
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Common\obj\Debug\ShopVanPhuong.Common.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Common\obj\Debug\ShopVanPhuong.Common.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.Common\obj\Debug\ShopVanPhuong.Common.pdb

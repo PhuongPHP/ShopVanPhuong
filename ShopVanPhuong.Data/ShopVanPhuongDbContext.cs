@@ -1,14 +1,10 @@
-﻿using ShopVanPhuong.Model.Models;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using ShopVanPhuong.Model.Models;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopVanPhuong.Data
 {
-    public class ShopVanPhuongDbContext: DbContext
+    public class ShopVanPhuongDbContext : IdentityDbContext<ApplicationUser>
     {
         public ShopVanPhuongDbContext() : base("ShopVanPhuongConnection")
         {
@@ -35,15 +31,21 @@ namespace ShopVanPhuong.Data
         public DbSet<Tag> Tags { set; get; }
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
-        //public DbSet<Error> Errors { set; get; }
+        public DbSet<Error> Errors { set; get; }
         //public DbSet<ContactDetail> ContactDetails { set; get; }
         //public DbSet<Feedback> Feedbacks { set; get; }
 
         //public DbSet<ApplicationGroup> ApplicationGroups { set; get; }
 
+        public static ShopVanPhuongDbContext Create()
+        {
+            return new ShopVanPhuongDbContext();
+        }
+
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);
         }
     }
 }

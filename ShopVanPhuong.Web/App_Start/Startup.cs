@@ -1,27 +1,31 @@
-﻿using System;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Mvc;
-using Autofac;
+﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
+using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
+using Microsoft.Owin.Security.DataProtection;
 using Owin;
 using ShopVanPhuong.Data;
 using ShopVanPhuong.Data.Infrastructure;
 using ShopVanPhuong.Data.Repositories;
+using ShopVanPhuong.Model.Models;
 using ShopVanPhuong.Service;
+using System.Reflection;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
 
 [assembly: OwinStartup(typeof(ShopVanPhuong.Web.App_Start.Startup))]
 
 namespace ShopVanPhuong.Web.App_Start
 {
-    public class Startup
+    public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
+            // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
+            ConfigAutofac(app);
+            ConfigureAuth(app);
         }
 
         private void ConfigAutofac(IAppBuilder app)
@@ -36,6 +40,13 @@ namespace ShopVanPhuong.Web.App_Start
 
             //InstancePerRequest là mỗi séc sừn nó sẽ tạo 1 đối tượng AsSelf()
             builder.RegisterType<ShopVanPhuongDbContext>().AsSelf().InstancePerRequest();
+
+            //Asp.net Identity
+            builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
+            builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
+            builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
+            builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
+            builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
 
             // Repositories 1
             builder.RegisterAssemblyTypes(typeof(PostCategoryRepository).Assembly)
@@ -52,8 +63,7 @@ namespace ShopVanPhuong.Web.App_Start
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
             //Set the WebApi DependencyResolver
-            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver((IContainer)container); 
-
+            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver((IContainer)container);
         }
     }
 }
