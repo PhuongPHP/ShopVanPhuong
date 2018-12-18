@@ -85,3 +85,5 @@ D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.UnitTest\bin\Debug\Microsof
 D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.UnitTest\bin\Debug\Microsoft.Owin.Security.xml
 D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.UnitTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\ASP.NET\ShopVanPhuong\ShopVanPhuong\ShopVanPhuong.UnitTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml

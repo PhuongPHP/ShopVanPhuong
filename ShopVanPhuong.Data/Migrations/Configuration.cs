@@ -24,7 +24,7 @@ namespace ShopVanPhuong.Data.Migrations
 
             var user = new ApplicationUser()
             {
-                UserName = "tedu",
+                UserName = "admin",
                 Email = "tedu.international@gmail.com",
                 EmailConfirmed = true,
                 BirthDay = DateTime.Now,
